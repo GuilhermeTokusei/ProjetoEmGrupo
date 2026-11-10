@@ -1,107 +1,210 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Livre</title>
-    
-</head>
+
     <style>
-        *{
-                margin: 0px;
-                padding: 0px;
-            }
 
-           #caixa1 {
-        height: 40px;
-        background-color: #FFE600;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 30px;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        font-size: 15px;
-        
-        
-    }
-            .barra-pesquisa {
-                margin-left: 10px;
-                width: 400px;
-            }
-            #caixa2{
-                height: 80px;
-                background-color: #FFE600;
-                align-items: center;
-                justify-content: center;
-                font-size: 30px;
-                font-family: Arial, sans-serif;
-                font-weight: bold;
-                padding-left: 200px;
-                
-            }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
 
-            #caixa3 {
-                height: 80px;
-                background-color: #FFE600;
-                margin-top: 1px;
-                font-size: 15px;
-                font-weight: bold;
-                font-family: Arial, sans-serif;
-                justify-content: center;
-                padding-left: 440px;
-                padding-top: 50px;
-            }
-            li{
-                display: inline-block;
-                background-color: gray;
-                margin: 10px;
-                margin-left: 100px;
-            }
-            main {
-                margin-left: 40px;
-                margin-right: 40px;
-            }
-            section {
-                margin: 40px;
-            }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background-color: #FFE600;
+        }
+
+        #caixa1 {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #caixa1 h1 {
+            font-size: 25px;
+        }
+
+        #caixa1 input {
+            width: 550px;
+            height: 40px;
+            padding-left: 15px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        #caixa1 button {
+            background-color: #E6007E;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        /* MENU */
+
+        #caixa2 {
+            height: 40px;
+            text-align: center;
+        }
+
+        #caixa2 li {
+            display: inline-block;
+            margin: 10px 15px;
+            font-size: 14px;
+        }
+
+        /* BANNER */
+
+        #banner {
+            height: 270px;
+            background: linear-gradient(to right, #009B50, #8BCB28, #009B50);
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+            box-sizing: border-box;
+        }
+
+        #banner h2 {
+            font-size: 25px;
+        }
+
+        #banner h1 {
+            font-size: 65px;
+            margin: 10px;
+        }
+
+        #banner h3 {
+            background-color: #FFE600;
+            color: black;
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 30px;
+        }
+
+        /* CARDS */
+
+        #opcoes {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: -1px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 180px;
+            height: 130px;
+            padding: 15px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .card h3 {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 12px;
+            color: #555555;
+        }
+
     </style>
+
+</head>
+
 <body>
+
     <header>
-        <nav>
-            
-                   
-            <div id="caixa1">
-                <img src="https://www.google.com/imgres?q=mercado%20livre&imgurl=https%3A%2F%2Fdauertec.com.br%2Fwp-content%2Fuploads%2F2024%2F01%2FMercado_livre_img3-1.png&imgrefurl=https%3A%2F%2Fdauertec.com.br%2F2024%2F01%2F19%2Fdaueradm-integrado-ao-mercado-livre-mais-facilidade-para-voce%2F&docid=vHnrAXnl6KjHNM&tbnid=FldwWJ7NzS407M&vet=12ahUKEwjfgIC4__uXAxW4lZUCHSj9Kd4QnPAOegUIhAEQAA..i&w=480&h=476&hcb=2&ved=2ahUKEwjfgIC4__uXAxW4lZUCHSj9Kd4QnPAOegUIhAEQAA" alt="">
-                <label form="">Estou buscando</label>
-                <input type="" class="barra-pesquisa">
-            </div>
-            <div id="caixa2">
-                <h1>Mercado Livre</h1>
-            </div>
-                <div id="caixa3">Video propaganda</div>
-                <li>>Frente Gratis</li>
-                <li>Entre na sua Conta</li>
-                <li>Insira sua localização</li>
-                <li>Meios de Pagamento</li>
+
+        <div id="caixa1">
+
+            <h1>🤝 Mercado Livre</h1>
+
+            <input type="text" placeholder="Buscar produtos, marcas e muito mais...">
+
+            <button>Cupons de até R$250 OFF</button>
+
+        </div>
+
+        <nav id="caixa2">
+
+            <ul>
+                <li>Categorias</li>
+                <li>Ofertas</li>
                 <li>Cupons</li>
-            
-        
+                <li>Supermercado</li>
+                <li>Moda</li>
+                <li>Mercado Play</li>
+                <li>Vender</li>
+                <li>Contato</li>
+            </ul>
+
         </nav>
+
     </header>
+
     <main>
-        <section>
-            
-                <p>Crie uma conta para melhorar sua experiencia</p>
-            
-            <form action="">
-                <label for="">Email</label>
-                <input type="texto"><br>
-                <label for="">Nome Completo</label>
-                <input type=""><br>
-                <button>Clique aqui</button>                
-            </form>
+
+        <section id="banner">
+
+            <h2>SUA PRIMEIRA COMPRA COM</h2>
+
+            <h1>FRETE GRÁTIS</h1>
+
+            <h3>ATÉ 60% OFF</h3>
+
         </section>
+
+        <section id="opcoes">
+
+            <div class="card">
+                <h3>Frete grátis</h3>
+                <p>Confira produtos com frete grátis.</p>
+            </div>
+
+            <div class="card">
+                <h3>Entre na sua conta</h3>
+                <p>Acesse sua conta Mercado Livre.</p>
+            </div>
+
+            <div class="card">
+                <h3>Insira sua localização</h3>
+                <p>Informe seu endereço.</p>
+            </div>
+
+            <div class="card">
+                <h3>Meios de pagamento</h3>
+                <p>Confira as opções de pagamento.</p>
+            </div>
+
+            <div class="card">
+                <h3>Menos de R$100</h3>
+                <p>Produtos com preços especiais.</p>
+            </div>
+
+            <div class="card">
+                <h3>Mais vendidos</h3>
+                <p>Confira os mais procurados.</p>
+            </div>
+
+        </section>
+
     </main>
+
 </body>
+
 </html>
